@@ -1,40 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- ________________________ SLIDE 1________________________ -->
+        <section data-markdown>
+          <textarea data-template>
+							```js [712: 1-2|3|4]
+							let a = 1;
+							let b = 2;
+							let c = x => 1 + 2 + x;
+							c(3);
+							```
+						</textarea
+          >
+        </section>
+        <!-- ________________________/SLIDE 1________________________ -->
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <!-- ________________________ SLIDE 2________________________ -->
+        <section>
+          Scroll down
+          <section>Vertical Section 1</section>
+          <section>Vertical Section 2</section>
+        </section>
+        <!-- ________________________/SLIDE 2________________________ -->
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <!-- ________________________ SLIDE 3________________________ -->
+        <section>
+          <pre><code data-line-numbers="3-5|8-10|13-15">
+							<table>
+								<tr>
+									<td>Apples</td>
+									<td>$1</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>Oranges</td>
+									<td>$2</td>
+									<td>18</td>
+								</tr>
+								<tr>
+									<td>Kiwi</td>
+									<td>$3</td>
+									<td>1</td>
+								</tr>
+							</table>
+							</code></pre>
+        </section>
+        <!-- ________________________/SLIDE 3________________________ -->
+        <!-- ________________________ SLIDE 4________________________ -->
+        <section>
+          <video
+            data-autoplay
+            src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+          ></video>
+        </section>
+        <!-- ________________________/SLIDE 4________________________ -->
+
+        <!-- ________________________ SLIDE 5________________________ -->
+        <section>
+          <h2>The Lorenz Equations</h2>
+          \[\begin{aligned} \dot{x} &amp; = \sigma(y-x) \\ \dot{y} &amp; = \rho
+          x - y - xz \\ \dot{z} &amp; = -\beta z + xy \end{aligned} \]
+        </section>
+        <!-- ________________________/SLIDE 5________________________ -->
+
+        <!-- ________________________ SLIDE 6________________________ -->
+        <section data-background-gradient="radial-gradient(#283b95, #17b2c3)">
+          <h2>🐳</h2>
+        </section>
+        <!-- ________________________/SLIDE 6________________________ -->
+
+        <!-- ________________________ SLIDE 7________________________ -->
+        <section
+          data-background-video="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+        >
+          <h2>🐰</h2>
+        </section>
+        <!-- ________________________/SLIDE 7________________________ -->
+
+        <!-- ________________________ SLIDE 8________________________ -->
+        <!-- <section></section> -->
+        <!-- ________________________/SLIDE 8________________________ -->
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
+      });
+    </script>
+  </body>
 </html>
